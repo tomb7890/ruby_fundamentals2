@@ -14,15 +14,23 @@ grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 #     each line, with an asterisk (*) in front of it so that it
 #     appears like this:
 
-grocery_list.each do |g| 
-  puts " * #{g}"
-end 
+def show_list( grocery_list )
+  grocery_list.each do |g| 
+    puts " * #{g}"
+  end 
+  puts "\n" 
+end
+
+show_list( grocery_list )
 
 #     You realize you've forgotten some rice, add it to your list and
 #     output it again. Given that you've already output your list
 #     twice, it might be good to consider writing a method to do
 #     this. Putting common bits of code in a method lets you reuse it
 #     throughout your program.
+
+grocery_list << "rice" 
+show_list( grocery_list )
 
 #     You lost count of how many things you need to pick up. Better
 #     output the total number of items on your list.
