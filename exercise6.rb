@@ -14,6 +14,10 @@ grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 #     each line, with an asterisk (*) in front of it so that it
 #     appears like this:
 
+grocery_list.each do |g| 
+  puts " * #{g}"
+end 
+
 #     You realize you've forgotten some rice, add it to your list and
 #     output it again. Given that you've already output your list
 #     twice, it might be good to consider writing a method to do
